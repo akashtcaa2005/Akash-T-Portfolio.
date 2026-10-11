@@ -1,5 +1,5 @@
 import { lazy, PropsWithChildren, Suspense, useEffect, useState } from "react";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import About from "./About";

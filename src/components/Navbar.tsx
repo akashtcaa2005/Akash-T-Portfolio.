@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { MdSecurity, MdMenu, MdClose } from "react-icons/md";
 import "./styles/Navbar.css";
 import { PROFILE } from "../data/portfolio";
