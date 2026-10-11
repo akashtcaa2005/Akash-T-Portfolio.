@@ -26,7 +26,7 @@ A dark, terminal-flavoured, zero-dependency portfolio that treats both halves of
 
 Personal portfolio of an AI/ML engineer and web security researcher. Dark, terminal-style design built with plain HTML, CSS and JavaScript. No frameworks, no build step.
 
-**Live:** https://akashtcaa2005.github.io/Akash-T-Portfolio/
+**Live:** [https://akash-t-portfolio.netlify.app/]
 
 ## Features
 
