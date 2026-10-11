@@ -1,0 +1,524 @@
+/* Security Page Styles */
+.security-page {
+  width: 100%;
+  color: #eae5ec;
+}
+
+/* Hero */
+.security-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 160px 30px 120px;
+  box-sizing: border-box;
+}
+
+.security-hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.security-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 58, 237, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.security-glow {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(6, 182, 212, 0.1) 0%, transparent 70%);
+  filter: blur(40px);
+}
+
+.security-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+}
+
+.security-badge {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #06b6d4;
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  font-family: monospace;
+}
+
+.security-hero-content h1 {
+  font-size: clamp(40px, 8vw, 100px);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 24px 0;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #fff 40%, #c2a4ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.security-x {
+  color: #06b6d4 !important;
+  -webkit-text-fill-color: #06b6d4 !important;
+  font-weight: 200;
+  font-size: 0.6em;
+}
+
+.security-hero-sub {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.security-hero-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.security-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Geist", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s;
+}
+
+.security-btn-primary {
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  color: white;
+}
+
+.security-btn-primary:hover {
+  opacity: 0.85;
+  color: white;
+}
+
+.security-btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2d9f3;
+}
+
+.security-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(194, 164, 255, 0.5);
+  color: white;
+}
+
+/* Section layout */
+.security-section {
+  padding: 100px 30px;
+  box-sizing: border-box;
+}
+
+.security-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.security-section-title {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+.security-section-title span {
+  color: #c2a4ff;
+}
+
+.security-section-sub {
+  font-size: 16px;
+  color: #94a3b8;
+  max-width: 650px;
+  margin: 0 0 50px 0;
+  line-height: 1.6;
+}
+
+/* AI security topics accordion */
+.security-topics {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.security-topic-card {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.security-topic-card:last-child {
+  border-bottom: none;
+}
+
+.security-topic-header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  border: none;
+  color: #eae5ec;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s;
+  font-family: "Geist", sans-serif;
+}
+
+.security-topic-header:hover {
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.security-topic-card.expanded .security-topic-header {
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.topic-number {
+  font-size: 12px;
+  color: #7c3aed;
+  font-family: monospace;
+  min-width: 24px;
+}
+
+.topic-title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.topic-toggle {
+  font-size: 20px;
+  color: #c2a4ff;
+  min-width: 20px;
+  text-align: center;
+}
+
+.security-topic-body {
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.topic-field h4 {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #06b6d4;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+}
+
+.topic-field p {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Workflow */
+.security-workflow-section {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.security-workflow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.workflow-step-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.workflow-step {
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  border-radius: 8px;
+  padding: 12px 18px;
+  text-align: center;
+}
+
+.workflow-num {
+  font-size: 10px;
+  color: #7c3aed;
+  font-family: monospace;
+  margin-bottom: 4px;
+}
+
+.workflow-label {
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.workflow-arrow {
+  color: #7c3aed;
+  font-size: 18px;
+}
+
+/* Checklist */
+.security-checklist {
+  max-width: 650px;
+}
+
+.checklist-progress {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.checklist-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.checklist-count {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0 0 20px 0;
+  font-family: monospace;
+}
+
+.checklist-item {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #eae5ec;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Geist", sans-serif;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.checklist-item:hover {
+  color: #c2a4ff;
+}
+
+.checklist-item.checklist-checked {
+  color: #64748b;
+  text-decoration: line-through;
+}
+
+.checklist-icon {
+  font-size: 20px;
+  color: #7c3aed;
+  flex-shrink: 0;
+}
+
+.checklist-checked .checklist-icon {
+  color: #06d6a0;
+}
+
+/* Research interests */
+.security-interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.security-interest-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 24px;
+  transition: 0.2s;
+}
+
+.security-interest-card:hover {
+  border-color: rgba(124, 58, 237, 0.3);
+  background: rgba(124, 58, 237, 0.05);
+}
+
+.interest-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.security-interest-card h4 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.security-interest-card p {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.interest-status {
+  font-size: 11px;
+  color: #818cf8;
+  border: 1px solid rgba(129, 140, 248, 0.3);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-family: monospace;
+}
+
+/* Security labs */
+.security-labs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.security-lab-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.lab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.lab-header h4 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.lab-status {
+  font-size: 10px;
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+.security-lab-card p {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Ethics */
+.security-ethics {
+  background: rgba(124, 58, 237, 0.04);
+}
+
+.ethics-card {
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ethics-card h3 {
+  font-size: 22px;
+  margin: 0 0 20px 0;
+  color: #c2a4ff;
+}
+
+.ethics-card p {
+  font-size: 15px;
+  color: #94a3b8;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* CTA */
+.security-cta {
+  text-align: center;
+}
+
+.security-cta h2 {
+  font-size: clamp(28px, 5vw, 50px);
+  margin: 0 0 16px 0;
+}
+
+.security-cta p {
+  color: #94a3b8;
+  font-size: 16px;
+  margin: 0 0 40px 0;
+}
+
+.security-cta-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .security-hero {
+    padding: 130px 20px 60px;
+  }
+
+  .security-section {
+    padding: 60px 20px;
+  }
+
+  .security-topic-body {
+    grid-template-columns: 1fr;
+  }
+
+  .security-workflow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .workflow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .ethics-card {
+    padding: 24px;
+  }
+}

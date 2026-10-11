@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080b18;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0a00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- Bar chart -->
+  <rect x="40" y="180" width="30" height="80" fill="#f59e0b" opacity="0.8"/>
+  <rect x="85" y="140" width="30" height="120" fill="#f59e0b" opacity="0.8"/>
+  <rect x="130" y="100" width="30" height="160" fill="#f59e0b" opacity="0.9"/>
+  <rect x="175" y="120" width="30" height="140" fill="#f59e0b" opacity="0.8"/>
+  <rect x="220" y="150" width="30" height="110" fill="#f59e0b" opacity="0.7"/>
+  <line x1="30" y1="265" x2="380" y2="265" stroke="white" stroke-width="1" opacity="0.3"/>
+  <!-- Decision tree mini -->
+  <circle cx="310" cy="60" r="12" fill="#7c3aed"/>
+  <line x1="310" y1="72" x2="280" y2="110" stroke="#a855f7" stroke-width="1.5"/>
+  <line x1="310" y1="72" x2="340" y2="110" stroke="#a855f7" stroke-width="1.5"/>
+  <circle cx="280" cy="118" r="10" fill="#6d28d9"/>
+  <circle cx="340" cy="118" r="10" fill="#6d28d9"/>
+  <line x1="280" y1="128" x2="265" y2="155" stroke="#a855f7" stroke-width="1" opacity="0.7"/>
+  <line x1="280" y1="128" x2="295" y2="155" stroke="#a855f7" stroke-width="1" opacity="0.7"/>
+  <circle cx="265" cy="162" r="7" fill="#5b21b6" opacity="0.8"/>
+  <circle cx="295" cy="162" r="7" fill="#5b21b6" opacity="0.8"/>
+  <text x="310" y="45" text-anchor="middle" fill="#c4b5fd" font-size="8" font-family="monospace">Random Forest</text>
+  <!-- Labels -->
+  <text x="200" y="20" text-anchor="middle" fill="white" font-size="14" font-family="monospace" font-weight="bold">ML Applications</text>
+  <text x="200" y="36" text-anchor="middle" fill="#f59e0b" font-size="9" font-family="monospace">Scikit-learn · Regression · Flask</text>
+</svg>

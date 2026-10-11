@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080b18;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- Image patches grid -->
+  <rect x="30" y="60" width="35" height="35" rx="3" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="70" y="60" width="35" height="35" rx="3" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="110" y="60" width="35" height="35" rx="3" fill="#2a1e5f" stroke="#6366f1" stroke-width="1"/>
+  <rect x="150" y="60" width="35" height="35" rx="3" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="30" y="100" width="35" height="35" rx="3" fill="#2a1e5f" stroke="#6366f1" stroke-width="1"/>
+  <rect x="70" y="100" width="35" height="35" rx="3" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="110" y="100" width="35" height="35" rx="3" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="150" y="100" width="35" height="35" rx="3" fill="#2a1e5f" stroke="#6366f1" stroke-width="1"/>
+  <text x="95" y="155" text-anchor="middle" fill="#93c5fd" font-size="8" font-family="monospace">Image Patches</text>
+  <!-- Arrow -->
+  <line x1="200" y1="100" x2="235" y2="100" stroke="#06b6d4" stroke-width="2"/>
+  <polygon points="235,95 245,100 235,105" fill="#06b6d4"/>
+  <!-- Transformer encoder -->
+  <rect x="248" y="55" width="60" height="95" rx="6" fill="#0a1929" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="278" y="100" text-anchor="middle" fill="#06b6d4" font-size="8" font-family="monospace">ViT</text>
+  <text x="278" y="115" text-anchor="middle" fill="#06b6d4" font-size="7" font-family="monospace">Encoder</text>
+  <!-- Output -->
+  <line x1="310" y1="100" x2="345" y2="100" stroke="#06b6d4" stroke-width="2"/>
+  <polygon points="345,95 355,100 345,105" fill="#06b6d4"/>
+  <!-- Classification box -->
+  <rect x="355" y="75" width="35" height="25" rx="4" fill="#0a2a0a" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="372" y="92" text-anchor="middle" fill="#22c55e" font-size="8" font-family="monospace">Cat</text>
+  <rect x="355" y="105" width="35" height="25" rx="4" fill="#2a0a0a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="372" y="122" text-anchor="middle" fill="#ef4444" font-size="8" font-family="monospace">Dog</text>
+  <!-- Labels -->
+  <text x="200" y="220" text-anchor="middle" fill="white" font-size="14" font-family="monospace" font-weight="bold">Vision Transformer</text>
+  <text x="200" y="238" text-anchor="middle" fill="#3b82f6" font-size="9" font-family="monospace">Cats vs Dogs Classification</text>
+</svg>
